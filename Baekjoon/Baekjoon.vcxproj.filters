@@ -16,10 +16,16 @@
     <Filter Include="소스 파일\분할 정복">
       <UniqueIdentifier>{3ecc370e-941d-4390-a7d8-803c264ff8d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\NewFilter1">
+      <UniqueIdentifier>{348dfdc7-f3ae-4a49-ae94-b0160d617541}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="boj-1992.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bog1111.cpp">
+      <Filter>소스 파일\분할 정복</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
