@@ -50,37 +50,6 @@ void printboard()
     }
 }
 
-void compress(deque<int>& here)
-{
-    int loop = (int)here.size();
-    for1(i, loop)
-    {
-        if (i + 1 != loop)
-        {
-            int first = here.front();
-            here.pop_front();
-            int second = here.front();
-            here.pop_front();
-            if (first == second)
-            {
-                here.push_back(first * 2);
-                i++;
-            }
-            else
-            {
-                here.push_back(first);
-                here.push_front(second);
-            }
-        }
-        else
-        {
-            int first = here.front();
-            here.pop_front();
-            here.push_back(first);
-        }
-    }
-}
-
 bool moveBlocksandchkWorthToMove(int prevDir, int curDir)
 {
     bool ret = false;
